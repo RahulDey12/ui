@@ -88,4 +88,16 @@ class UiCommand extends Command
         $this->info('React scaffolding installed successfully.');
         $this->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
     }
+
+    /**
+     * Install the "tailwind" preset.
+     * 
+     * @return void
+     */
+    protected function tailwind() {
+        Presets\Tailwind::install();
+
+        $this->info('Tailwind scaffolding installed successfully.');
+        $this->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
+    }
 }
